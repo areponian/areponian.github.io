@@ -4,6 +4,15 @@
   <meta charset="UTF-8">
   <title>AREPONIAN Project</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .hidden { display: none; }
+    .unsubscribe-form, .thank-you-message {
+      margin-top: 1em;
+      padding: 1em;
+      background: #f4f4f4;
+      border: 1px solid #ccc;
+    }
+  </style>
 </head>
 <body>
   <!-- Header -->
@@ -15,6 +24,7 @@
         <li><a href="#">Community</a></li>
         <li><a href="#">Docs</a></li>
         <li><a href="#">Events</a></li>
+        <li><a href="#" onclick="toggleUnsubscribe()">Unsubscribe</a></li>
       </ul>
     </nav>
     <button class="cta">Get Involved</button>
@@ -34,35 +44,49 @@
     </section>
 
     <section class="cards">
-    <a href="oscl.html" class="card">
-        The OSCL License
-    </a>
-    <div class="card">How to protect your Software</div>
-    <a href="proprietary.html" class="card">
-        Why Proprietary == Malware
-    </a>
-
-
+      <a href="oscl.html" class="card">The OSCL License</a>
+      <div class="card">How to protect your Software</div>
+      <a href="proprietary.html" class="card">Why Proprietary == Malware</a>
     </section>
-
+  </main>
 
   <!-- Sidebar -->
   <aside>
-    <h3>Latest Updates</h3>
+    <h3>Test</h3>
     <ul>
-      <li>Hackathon 2026: Registration Open</li>
-      <li>New release: HubOS v2.1</li>
-      <li>Weekly dev chat: Fridays @ 18:00 UTC</li>
+      <li>Test</li>
+      <li>Test</li>
+      <li>Test</li>
     </ul>
   </aside>
 
   <!-- Footer -->
   <footer>
-    <form>
-      <input type="email" placeholder="Join our newsletter">
-      <button>Subscribe</button>
+    <form id="newsletter-form" action="https://formsubmit.co/areponian.news@gmail.com" method="POST" onsubmit="showThankYou(event)">
+      <input type="email" name="email" placeholder="Join our newsletter" required>
+      <input type="hidden" name="_captcha" value="false">
+      <button type="submit">Subscribe</button>
     </form>
+    <div id="thank-you" class="thank-you-message hidden">
+      Subscription received. Future updates will be sent from areponian.news@gmail.com.
+    </div>
+
+    <div id="unsubscribe" class="unsubscribe-form hidden">
+      <h4>Unsubscribe from Newsletter</h4>
+      <form action="https://formsubmit.co/areponian.news@gmail.com" method="POST" onsubmit="showUnsubThankYou(event)">
+        <input type="email" name="email" placeholder="Enter your email to unsubscribe" required>
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="unsubscribe" value="true">
+        <button type="submit">Unsubscribe</button>
+      </form>
+      <div id="unsub-thank-you" class="thank-you-message hidden">
+        Unsubscription request received.
+      </div>
+    </div>
+
     <p>© 2026 AREPONIAN Project</p>
   </footer>
+
+  <script src="unsub.js"></script>
 </body>
 </html>
