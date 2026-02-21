@@ -9,3 +9,10 @@ function showThankYou(event) {
   document.getElementById('thank-you').classList.remove('hidden');
   event.target.submit();
 }
+
+function showUnsubThankYou(event) {
+  event.preventDefault();
+  event.target.classList.add('hidden');
+  document.getElementById('unsub-thank-you').classList.remove('hidden');
+  event.target.submit();
+}
