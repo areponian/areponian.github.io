@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="style.css">
   <style>
     .hidden { display: none; }
-    .unsubscribe-form, .thank-you-message {
+    .thank-you-message {
       margin-top: 1em;
       padding: 1em;
       background: #f4f4f4;
@@ -71,19 +71,10 @@
       Subscription received. Future updates will be sent from areponian.news@gmail.com.
     </div>
 
-    <!-- Unsubscribe Form -->
-    <form id="unsubscribe-form" action="https://formsubmit.co/areponian.news@gmail.com" method="POST" onsubmit="showUnsubThankYou(event)">
-      <input type="email" name="email" placeholder="Enter your email to unsubscribe" required>
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="unsubscribe" value="true">
-      <label>
-        <input type="checkbox" required>
-        I confirm this is my email address and I want to unsubscribe.
-      </label>
-      <button type="submit">Unsubscribe</button>
-    </form>
-    <div id="unsub-thank-you" class="thank-you-message hidden">
-      Unsubscription request received.
+    <!-- Unsubscribe Instructions -->
+    <div class="thank-you-message">
+      <h4>Unsubscribe from Newsletter</h4>
+      <p>To unsubscribe, reply to any newsletter email from <code>areponian.news@gmail.com</code> with the word <strong>UNSUBSCRIBE</strong> in the subject line or message body. Your request will be processed within 10 business days.</p>
     </div>
 
     <p>© 2026 AREPONIAN Project</p>
