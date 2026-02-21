@@ -82,7 +82,7 @@ footer {
   background: #f9f9f9;
   padding: 20px;
   border: 1px solid #ccc;
-  font-family: monospace;
+  font-family: inherit;
   font-size: 14px;
   line-height: 1.5;
   overflow-x: auto;
