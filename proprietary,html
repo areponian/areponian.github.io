@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Proprietary Software – AREPONIAN Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo"><a href="index.html">AREPONIAN Project</a></div>
+    <nav>
+      <ul>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="docs.html">Docs</a></li>
+        <li><a href="events.html">Events</a></li>
+      </ul>
+    </nav>
+    <button class="cta">Get Involved</button>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <h1>Proprietary Software Is Often Hostile to Users</h1>
+    <p>AREPONIAN Editorial – 2026</p>
+
+    <pre class="license-text">
+Proprietary Software Is Often Hostile to Users
+----------------------------------------------
+
+Proprietary software—also called nonfree software—is software that the user
+is forbidden to study, modify, or share. These restrictions are not
+accidental; they are deliberate mechanisms of control. When a developer
+withholds the source code, the user is placed in a position of dependence,
+unable to verify what the program truly does.
+
+This imbalance of power is the root of the problem. When one party controls
+the software and the other merely "uses" it, the user becomes vulnerable to
+abuse. And in practice, this abuse is widespread.
+
+Proprietary programs frequently include malicious functionalities:
+    • surveillance and data harvesting
+    • digital restrictions (DRM)
+    • remote kill switches
+    • forced updates
+    • advertising and behavioral tracking
+    • device lock‑in and vendor‑controlled ecosystems
+
+These behaviors are not rare exceptions—they are the business model.
+When the user cannot inspect or modify the software, the developer is free
+to prioritize profit over the user's autonomy, privacy, or safety.
+
+Power invites misuse. Once a developer has the unilateral ability to change
+the software on your device, the temptation to exploit that power becomes
+strong. Whether the motive is profit, analytics, or control, the result is
+the same: the user is mistreated.
+
+Online services amplify this problem. Although a service is not "software"
+in the traditional sense, it can still impose the same injustices:
+    • opaque server‑side code
+    • data retention without consent
+    • algorithmic manipulation
+    • dependency on proprietary clients
+
+Many services require the user to run a proprietary app merely to access
+them. These apps often contain the same harmful features as traditional
+proprietary programs, and sometimes more.
+
+Mobile devices introduce yet another layer of surveillance. Even when the
+software is free, the underlying radio systems track location as a matter
+of design. Proprietary mobile operating systems add additional tracking,
+analytics, and restrictions on top of that.
+
+As of 2026, the number of documented cases of proprietary software engaging
+in harmful behavior is enormous—and growing. The pattern is clear:
+when users lack control, developers exploit that lack of control.
+
+If you encounter a proprietary program or service that mistreats users,
+we encourage you to document it and share your findings publicly. Only by
+exposing these practices can we help others understand the risks.
+
+Freedom in computing is not a luxury. It is a requirement for a healthy,
+trustworthy digital society. Software should serve its users—not the other
+way around.
+
+    — AREPONIAN Project Editorial Board
+    </pre>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 AREPONIAN Project</p>
+  </footer>
+</body>
+</html>
