@@ -105,3 +105,32 @@ main {
   margin: 0 auto;
   padding: 40px 20px;
 }
+
+h3 {
+  font-size: 22px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+ul {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #aaa;
+  margin: 20px 0;
+}
+
+em {
+  color: #555;
+}
+
